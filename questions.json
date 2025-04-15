@@ -314,7 +314,7 @@
         "question": "What is the value of B?",
         "correct_answer": "1/12",
         "hint": "How many outcomes give max value 2?",
-        "explanation": "Outcomes are (1,2), (2,1), and (2,2) → 3 outcomes = \\( \\frac{3}{36} = \\frac{1}{12} \\)."
+        "explanation": "Outcomes are (1,2), (2,1), and (1,2) → 3 outcomes = \\( \\frac{3}{36} = \\frac{1}{12} \\)."
       },
       {
         "part_id": "c",
