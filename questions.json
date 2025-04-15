@@ -20,7 +20,7 @@
       {
         "part_id": "b",
         "points": 2,
-        "question": "Calculate the percentage error when Fred\u2019s approximation is compared to the value of \\( \\pi \\) on your calculator. Give your answer correct to two decimal places.",
+        "question": "Calculate the percentage error when Fred\u2019s approximation is compared to the value of \\( \\pi \\) on your calculator.",
         "correct_answer": "0.166%",
         "hint": "Use the formula: \\( \\text{Percentage Error} = \\left| \\frac{\\text{approx} - \\pi}{\\pi} \\right| \\times 100 \\)",
         "explanation": "Fred\u2019s value is 3.1468 and actual \\( \\pi \\approx 3.14159265 \\).\\n\\n\\[ \\frac{|3.1468 - 3.1416|}{3.1416} \\times 100 \\approx 0.166\\% \\]"
