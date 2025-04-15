@@ -286,8 +286,8 @@
         "points": 5,
         "question": "Calculate the maximum possible area of the field.",
         "correct_answer": "2280",
-        "hint": "Use the area formula: \\( A = \\frac{1}{2} ab \\sin(C) \\).\\n\\nRemember: the measurements provided are rounded — use the maximum possible values.",
-        "explanation": "Maximum possible values:\\n\\( AB = 56.5 \\), \\( BC = 82.5 \\), and \\( B = 107.5^\\circ \\).\\n\\n\\[ A = \\frac{1}{2} \\cdot 56.5 \\cdot 82.5 \\cdot \\sin(107.5^\\circ) \\approx 2280 \\text{ cm}^2 \\]"
+        "hint": "The values are rounded!  Think, would a triangle with an angle of 107.5 have a larger area than the same sided triangle with a 102.5 degree angle?",
+        "explanation": "Maximum possible values:\\n\\( AB = 56.5 \\), \\( BC = 82.5 \\), and \\( B = 102.5^\\circ \\).\\n\\n\\[ A = \\frac{1}{2} \\cdot 56.5 \\cdot 82.5 \\cdot \\sin(107.5^\\circ) \\approx 2280 \\text{ cm}^2 \\]"
       }
     ]
   },
