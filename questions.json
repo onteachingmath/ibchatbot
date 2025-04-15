@@ -132,7 +132,7 @@
     "topic": "Geometry",
     "source": "2021 Paper 1 TZ2 Question 5",
     "question_context": "The Voronoi diagram below shows three food carts selling carnitas, T1, T2, and T3.\\n\\nA fourth food cart, T4, is located in the shaded region. The dashed lines in the diagram below represent the edges in the Voronoi diagram.\\n\\nJoseLuis stands inside the shaded region.",
-    "image": "https://dl.dropboxusercontent.com/scl/fi/8f7gfa2oemdhe8x5py1a8/p1.2021.tz1.5.jpg",
+    "image": "https://onteachingmath.github.io/ibchatbot/images/p1.2021.tz1.5.jpg",
     "question_type": "short-answer",
     "parts": [
       {
@@ -146,7 +146,7 @@
       {
         "part_id": "b",
         "points": 2,
-        "question": "Food cart T2 has coordinates \\( (-9, 5) \\) and the edge connecting vertices A and B has equation \\( y = 3 \\).\\n\\nWrite down the coordinates of tower T4.",
+        "question": "Food cart T2 has coordinates \\( (-9, 5) \\) and the edge connecting vertices A and B has equation \\( y = 3 \\). Write down the coordinates of tower T4.",
         "correct_answer": "(-9, 1)",
         "hint": "Use the fact that the edge lies halfway between T2 and T4, and is horizontal at \\( y = 3 \\).",
         "explanation": "The edge is a horizontal line, so T4 must have the same \\( x \\)-coordinate (\\( -9 \\)) and be mirrored across \\( y = 3 \\). Thus, T4 is at \\( (-9, 1) \\)."
@@ -155,12 +155,338 @@
         "part_id": "c",
         "points": 3,
         "question": "Tower T1 has coordinates \\( (-13, 3) \\).\\nFind the gradient of the edge of the Voronoi diagram between towers T1 and T2.",
-        "correct_answer": "0.5",
+        "correct_answer": "-2",
         "hint": "Use the formula for gradient between two points: \\( m = \\frac{y_2 - y_1}{x_2 - x_1} \\).",
-        "explanation": "T1 is at \\( (-13, 3) \\), T2 is at \\( (-9, 5) \\).\\n\\[ m = \\frac{5 - 3}{-9 - (-13)} = \\frac{2}{4} = 0.5 \\]"
+        "explanation": "T1 is at \\( (-13, 3) \\), T2 is at \\( (-9, 5) \\).\\n\\[ m = \\frac{5 - 3}{-9 - (-13)} = \\frac{2}{4} = 0.5 \\]  Remember, they're perpendicular."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "IB Math",
+    "topic": "Statistics",
+    "source": "2021 Paper 1 TZ2 Question 6",
+    "question_context": "Eileen is a baker. She makes brownies.\\n\\nShe claims that when she uses flour brand X, the mean weight of her brownies is less than when she uses flour brand Y.\\n\\nShe records the weight of the brownies, in grams, from a random selection of batches of brownies made with one flour or the other.\\n\\n<b>Brownies made from flour X:</b> 136, 134, 142, 141, 128, 126\\n<b>Brownies made from flour Y:</b> 135, 138, 141, 140, 136, 134\\n\\nIn order to test her claim, Eileen performs a t-test at a 10% level of significance. It is assumed that the weights of the brownies are normally distributed and the samples have equal variances.",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 1,
+        "question": "State, in words, the null hypothesis.",
+        "correct_answer": "The population mean weight of brownies using flour X is equal to the mean weight using flour Y.",
+        "hint": "Null hypothesis assumes no difference or no effect.",
+        "explanation": "The null hypothesis is that the population mean weights of brownies using flour X and flour Y are equal."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Calculate the p-value for this test.",
+        "correct_answer": "0.177",
+        "hint": "Use a 2-sample t-test assuming equal variances.",
+        "explanation": "Using a calculator or spreadsheet, the p-value for this 2-sample t-test is approximately 0.177."
+      },
+      {
+        "part_id": "c",
+        "points": 2,
+        "question": "Do we reject the null or fail to reject the null at a 10% significance level?",
+        "correct_answer": "fail to reject",
+        "hint": "Compare the p-value to the significance level (0.10).",
+        "explanation": "Since 0.177 > 0.10, we fail to reject the null hypothesis."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "IB Math",
+    "topic": "Functions",
+    "source": "2021 Paper 1 TZ2 Question 7",
+    "question_context": "Mr. Brown observed that students suffer from CRS — they just can’t remember much at all.\\n\\nHe modeled the percentage of information they remember, \\( R(t) \\), by the function:\\n\\n\\[ R(t) = 100e^{-pt}, \\quad t \\geq 0 \\]\\n\\nwhere \\( t \\) is the number of days after a lesson.\\n\\nHe found that 1 day after a lesson, students had forgotten 50% of the information presented.",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Find the value of \\( p \\).",
+        "correct_answer": "0.693",
+        "hint": "Use \\( R(1) = 50 \\) and solve \\( 100e^{-p} = 50 \\).",
+        "explanation": "Set \\( R(1) = 50 \\):\\n\\[ 100e^{-p} = 50 \\Rightarrow e^{-p} = 0.5 \\Rightarrow -p = \\ln(0.5) \\Rightarrow p = \\ln(2) \\approx 0.693 \\]"
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Use the model to find the percentage of information retained 36 hours after a lecture.",
+        "correct_answer": "35.4",
+        "hint": "Convert 36 hours to 1.5 days and calculate \\( R(1.5) \\).",
+        "explanation": "Since 36 hours = 1.5 days:\\n\\[ R(1.5) = 100e^{-0.693(1.5)} \\approx 35.4\\% \\]"
+      },
+      {
+        "part_id": "c",
+        "points": 1,
+        "part_context": "Based on his model, Mr. Brown believes that his students will always retain some information from the lecture.",
+        "question": "State a mathematical reason why Mr. Brown might believe this.",
+        "correct_answer": "R(t) > 0",
+        "hint": "What happens to \\( R(t) \\) as \\( t \\to \\infty \\)?",
+        "explanation": "As \\( t \\to \\infty \\), \\( R(t) \\to 0 \\), but never reaches 0. The exponential function has a horizontal asymptote at \\( y = 0 \\), so \\( R(t) > 0 \\)."
+      },
+      {
+        "part_id": "d",
+        "points": 1,
+        "question": "Write down one possible limitation of the domain of this model.",
+        "correct_answer": "t ≥ 0",
+        "hint": "Can we model before time \\( t = 0 \\)? What about very large \\( t \\)?",
+        "explanation": "The model is only valid for \\( t \\geq 0 \\). At very small or large values of \\( t \\), the model may be unrealistic. For example, \\( R(0) = 100 \\), but memory may not be perfect, and people do not live forever."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "IB Math",
+    "topic": "Number",
+    "source": "2021 Paper 1 TZ2 Question 8",
+    "question_context": "Alex and LuisAlejandro each began a fitness program.\\n\\nOne day, they both ran 500 meters. On each subsequent day, Alex ran 100 meters more than the previous day. LuisAlejandro increased his distance by 2% of the distance he ran on the previous day.",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Calculate how far Alex ran on day 20 of his fitness program.",
+        "correct_answer": "2400",
+        "hint": "Alex follows an arithmetic sequence: \\( a = 500,\\ d = 100 \\). Use \\( u_n = a + (n - 1)d \\).",
+        "explanation": "This is an arithmetic sequence: \\( u_n = 500 + (n - 1)(100) \\).\\n\\[ u_{20} = 500 + 19 \\times 100 = 500 + 1900 = 2400 \\text{ meters} \\]"
+      },
+      {
+        "part_id": "b",
+        "points": 3,
+        "question": "Calculate how far LuisAlejandro ran on day 20 of his fitness program.",
+        "correct_answer": "728",
+        "hint": "LuisAlejandro follows a geometric sequence: \\( a = 500,\\ r = 1.02 \\). Use \\( u_n = ar^{n - 1} \\).",
+        "explanation": "This is a geometric sequence: \\( u_n = 500(1.02)^{n - 1} \\).\\n\\[ u_{20} = 500(1.02)^{19} \\approx 728 \\text{ meters} \\]"
+      },
+      {
+        "part_id": "c",
+        "points": 3,
+        "question": "On day \\( n \\), LuisAlejandro runs more than Alex for the first time. Find the value of \\( n \\).",
+        "correct_answer": "185",
+        "hint": "Set up an inequality: \\( 500(1.02)^{n - 1} > 500 + (n - 1)(100) \\) and solve by iteration.",
+        "explanation": "We compare: \\( 500(1.02)^{n - 1} \\) vs. \\( 500 + (n - 1)(100) \\).\\nUse a calculator to try values — the smallest integer \\( n \\) where LuisAlejandro’s distance exceeds Alex’s is \\( n = 185 \\)."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "IB Math",
+    "topic": "Trigonometry",
+    "source": "2021 Paper 1 TZ2 Question 9",
+    "question_context": "A triangular field ABC has side \\( AB = 56 \\text{ cm} \\) and \\( BC = 82 \\text{ cm} \\). Each side is measured to the nearest centimeter. Angle \\( B = 105^\\circ \\), measured to the nearest 5°.\\n\\nThe triangle is shown below.",
+    "image": "https://onteachingmath.github.io/ibchatbot/images/p1.2021.tz1.9.jpg",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 5,
+        "question": "Calculate the maximum possible area of the field.",
+        "correct_answer": "2280",
+        "hint": "Use the area formula: \\( A = \\frac{1}{2} ab \\sin(C) \\).\\n\\nRemember: the measurements provided are rounded — use the maximum possible values.",
+        "explanation": "Maximum possible values:\\n\\( AB = 56.5 \\), \\( BC = 82.5 \\), and \\( B = 107.5^\\circ \\).\\n\\n\\[ A = \\frac{1}{2} \\cdot 56.5 \\cdot 82.5 \\cdot \\sin(107.5^\\circ) \\approx 2280 \\text{ cm}^2 \\]"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "IB Math",
+    "topic": "Probability",
+    "source": "2021 Paper 1 TZ2 Question 10",
+    "question_context": "A game is played where two unbiased dice are rolled, and the score in the game is the greater of the two numbers shown.\\n\\nIf the two numbers are the same, then the score is just that number.\\n\\nLet \\( T \\) be the random variable representing the score in a game.\\n\\nThe distribution is shown below with missing values labeled A–F.",
+    "image": "https://onteachingmath.github.io/ibchatbot/images/p1.2021.tz1.10.jpg",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 1,
+        "question": "What is the value of A?",
+        "correct_answer": "1/36",
+        "hint": "This is the probability of getting a score of 1. What’s the only way to roll it?",
+        "explanation": "Only one outcome (1,1) gives a score of 1: \\( \\frac{1}{36} \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 1,
+        "question": "What is the value of B?",
+        "correct_answer": "1/12",
+        "hint": "How many outcomes give max value 2?",
+        "explanation": "Outcomes are (1,2), (2,1), and (2,2) → 3 outcomes = \\( \\frac{3}{36} = \\frac{1}{12} \\)."
+      },
+      {
+        "part_id": "c",
+        "points": 1,
+        "question": "What is the value of C?",
+        "correct_answer": "5/36",
+        "hint": "Count all outcomes where max value is 3.",
+        "explanation": "Outcomes are (1,3), (3,1), (2,3), (3,2), and (3,3) → 5 outcomes = \\( \\frac{5}{36} \\)."
+      },
+      {
+        "part_id": "d",
+        "points": 1,
+        "question": "What is the value of D?",
+        "correct_answer": "7/36",
+        "hint": "Include all unique dice pairs with maximum 4.",
+        "explanation": "There are 7 combinations where the maximum is 4 → \\( \\frac{7}{36} \\)."
+      },
+      {
+        "part_id": "e",
+        "points": 1,
+        "question": "What is the value of E?",
+        "correct_answer": "1/4",
+        "hint": "Total number of combinations where score is 5?",
+        "explanation": "9 outcomes lead to a score of 5 → \\( \\frac{9}{36} = \\frac{1}{4} \\)."
+      },
+      {
+        "part_id": "f",
+        "points": 2,
+        "question": "What is the value of F?",
+        "correct_answer": "11/36",
+        "hint": "It’s the most likely outcome — how many pairs give a max of 6?",
+        "explanation": "11 outcomes result in 6 being the max → \\( \\frac{11}{36} \\)."
+      },
+      {
+        "part_id": "g",
+        "points": 1,
+        "question": "Find the probability that a player scores at least 3 in a game.",
+        "correct_answer": "8/9",
+        "hint": "Sum the probabilities of scores 3 to 6 (i.e., C to F).",
+        "explanation": "Add C through F: \\( \\frac{5+7+9+11}{36} = \\frac{32}{36} = \\frac{8}{9} \\)."
+      },
+      {
+        "part_id": "h",
+        "points": 2,
+        "question": "Find the probability that a player scores 6, given they scored at least 3.",
+        "correct_answer": "11/32",
+        "hint": "Use conditional probability: \\( P(6 \\mid \\geq 3) = \\frac{P(6)}{P(\\geq 3)} \\).",
+        "explanation": "\\( P(6) = \\frac{11}{36}, P(\\geq 3) = \\frac{32}{36} \\).\\n\\[ \\frac{11/36}{32/36} = \\frac{11}{32} \\]"
+      },
+      {
+        "part_id": "i",
+        "points": 2,
+        "question": "Find the expected score of the game.",
+        "correct_answer": "161/36",
+        "hint": "Use expected value formula: \\( \\sum xP(x) \\) using the full distribution.",
+        "explanation": "Use all values (1 to 6) and their probabilities.\\n\\[ E(T) = \\frac{1(1) + 2(3) + 3(5) + 4(7) + 5(9) + 6(11)}{36} = \\frac{161}{36} \\approx 4.47 \\]"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "IB Math",
+    "topic": "Functions",
+    "source": "2021 Paper 1 TZ2 Question 11",
+    "question_context": "If an administrator is spotted near the classroom, a student will activate a siren to warn the students.\\n\\nThe sound intensity, \\( I \\), of the siren varies inversely with the square of the distance, \\( d \\), from the siren, where \\( d > 0 \\).\\n\\nIt is known that at a distance of 1.5 meters from the siren, the sound intensity is \\( 4 \\text{ Wm}^{-2} \\).",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Find the constant of variation.",
+        "correct_answer": "9",
+        "hint": "Use the model \\( I = \\frac{k}{d^2} \\). Substitute \\( I = 4 \\), \\( d = 1.5 \\).",
+        "explanation": "Using \\( I = \\frac{k}{d^2} \\):\\n\\[ 4 = \\frac{k}{(1.5)^2} = \\frac{k}{2.25} \\Rightarrow k = 4 \\times 2.25 = 9 \\]"
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Fatima can hear the siren only if the sound intensity is greater than \\( 1.5 \\times 10^{-6} \\text{ Wm}^{-2} \\).\\n\\nFind the values of \\( d \\) where Fatima cannot hear the siren.",
+        "correct_answer": "2450",
+        "hint": "Set \\( \\frac{9}{d^2} = 1.5 \\times 10^{-6} \\), solve for \\( d \\).",
+        "explanation": "Set \\( \\frac{9}{d^2} = 1.5 \\times 10^{-6} \\Rightarrow d^2 = \\frac{9}{1.5 \\times 10^{-6}} = 6 \\times 10^6 \\Rightarrow d = \\sqrt{6 \\times 10^6} \\approx 2450 \\text{ m} \\).\\n\\nSo if \\( d > 2450 \\), Fatima cannot hear the siren."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "IB Math",
+    "topic": "Calculus",
+    "source": "2021 Paper 1 TZ2 Question 12",
+    "question_context": "Ana designs a box to hide things from Victoria.\\n\\nThe top of the box is the shape of a right triangle \\( \\triangle GIK \\). A rectangle \\( HIJL \\) is inscribed within the triangle.\\n\\nThe side lengths are: \\( GH = p \\) cm, \\( JK = q \\) cm, \\( HL = 8 \\) cm, and \\( LJ = 6 \\) cm.\\n\\nLet \\( A \\) be the area of the top of the box, in square centimeters.",
+    "image": "https://onteachingmath.github.io/ibchatbot/images/p1.2021.tz1.12.jpg",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Find an expression for \\( A \\) in terms of \\( p \\) and \\( q \\). (Paper work recommended for this step!)",
+        "correct_answer": "3q + 4p + 48",
+        "hint": "Break the total triangle area into parts or use geometry.",
+        "explanation": "The total area is composed of three triangle sections and the rectangle. When simplified: \\( A = 3q + 4p + 48 \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Show that \\( A = \\frac{192}{q} + 3q + 48 \\). Do this on paper, bruh.",
+        "correct_answer": "",
+        "hint": "Use substitution from part a. Probably involves replacing \\( p \\).",
+        "explanation": "Paper work step — can’t show full proof here. It requires solving for \\( p \\) from a geometric relation and plugging it in."
+      },
+      {
+        "part_id": "c",
+        "points": 2,
+        "question": "Find \\( \\frac{dA}{dq} \\).",
+        "correct_answer": "-192/q^2 + 3",
+        "hint": "Differentiate \\( A = \\frac{192}{q} + 3q + 48 \\).",
+        "explanation": "\\[ \\frac{dA}{dq} = -\\frac{192}{q^2} + 3 \\]"
+      },
+      {
+        "part_id": "d",
+        "points": 1,
+        "question": "Ana wishes to minimize the area of the top of the box.\\n\\nWrite down the equation she could use to find this value of \\( q \\).",
+        "correct_answer": "-192/q^2 + 3 = 0",
+        "hint": "Set the derivative equal to 0.",
+        "explanation": "To find the minimum, solve \\( \\frac{dA}{dq} = 0 \\):\\n\\[ -\\frac{192}{q^2} + 3 = 0 \\]"
+      },
+      {
+        "part_id": "e",
+        "points": 1,
+        "question": "Find the value of \\( q \\) that minimizes \\( A \\).",
+        "correct_answer": "8",
+        "hint": "Solve \\( -\\frac{192}{q^2} + 3 = 0 \\).",
+        "explanation": "\\[ -\\frac{192}{q^2} + 3 = 0 \\Rightarrow q^2 = 64 \\Rightarrow q = 8 \\]"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "IB Math",
+    "topic": "Calculus",
+    "source": "2021 Paper 1 TZ2 Question 13",
+    "question_context": "Mr. Tacket is practicing golf. Each time he hits a ball, he records \\( \\theta \\), the angle of the ball after being struck, and \\( l \\), the horizontal distance the ball travels in meters when it first hits the ground.\\n\\nHe finds that the following equation models the situation:\\n\\[ \\frac{dl}{d\\theta} = -0.2\\theta + 9 \\qquad \\text{for } 35^\\circ \\leq \\theta \\leq 75^\\circ \\]",
+    "image": "https://onteachingmath.github.io/ibchatbot/images/p1.2021.tz1.13.jpg",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 3,
+        "question": "Determine if the graph of \\( l \\) against \\( \\theta \\) is increasing or decreasing at \\( \\theta = 50^\\circ \\).\\n\\nJust type: <code>increasing</code> or <code>decreasing</code>",
+        "correct_answer": "decreasing",
+        "hint": "Evaluate the sign of \\( \\frac{dl}{d\\theta} \\) at \\( \\theta = 50 \\).",
+        "explanation": "Since \\( \\frac{dl}{d\\theta} = -0.2(50) + 9 = -1 \\), the function is decreasing."
+      },
+      {
+        "part_id": "b",
+        "points": 5,
+        "question": "Mr. Tacket observes that when \\( \\theta = 40^\\circ \\), the ball travels \\( l = 205.5 \\) meters.\\n\\nFind an expression for the function \\( l(\\theta) \\).\\n\\nJust type the <strong>right-hand side</strong> of the expression. Use <code>(theta)</code> for \\( \\theta \\).",
+        "correct_answer": "-0.1(theta)^2 + 9(theta) + 5.5",
+        "hint": "Integrate \\( -0.2\\theta + 9 \\), then solve for C using the point (40, 205.5).",
+        "explanation": "Integrate: \\[ \\int (-0.2\\theta + 9) \\, d\\theta = -0.1\\theta^2 + 9\\theta + C \\]\\nUse \\( l(40) = 205.5 \\) to find \\( C = 5.5 \\).\\nSo \\( l(\\theta) = -0.1\\theta^2 + 9\\theta + 5.5 \\)"
       }
     ]
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
 ]

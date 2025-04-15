@@ -4,8 +4,17 @@
   <meta charset="UTF-8" />
   <title>IB Math Chatbot</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async 
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
   <style>
     body { font-family: Arial, sans-serif; margin: 20px auto; max-width: 800px; }
     #chat-log { background: #f4f4f4; padding: 20px; border-radius: 10px; min-height: 300px; }
@@ -19,8 +28,17 @@
   <h1>🤖 IB Math Chatbot</h1>
   <div id="chat-log"></div>
   <input type="text" id="answer" placeholder="Type your answer..." />
+  
   <button onclick="submitAnswer()">Submit</button>
+  
+
 
   <script src="chatbot.js"></script>
+  <div id="chat-log"></div>
+
+
+
+<input type="text" id="answer" placeholder="Type your answer..." />
+
 </body>
 </html>

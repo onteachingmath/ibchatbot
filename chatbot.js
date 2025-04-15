@@ -59,13 +59,22 @@ function showSourceSelection() {
   const sources = [...new Set(fullData
     .filter(q => selectedTopic === "All" || q.topic.trim() === selectedTopic.trim())
     .map(q => q.source))];
-  
+
   showMessage("📄 Choose a source:");
+
+  // Add Go Back Button
+  const backBtn = document.createElement("button");
+  backBtn.textContent = "🔙 Back to Topic Selection";
+  backBtn.style.margin = "10px";
+  backBtn.onclick = resetToTopicSelection;
+  document.getElementById("chat-log").appendChild(backBtn);
+
   showButtons(["All", ...sources], source => {
     selectedSource = source;
     startQuiz();
   });
 }
+
 
 function startQuiz() {
   data = fullData.filter(q =>
@@ -87,17 +96,33 @@ function startQuiz() {
 function showContextOnce() {
   if (!hasSeenContext) {
     const q = data[currentQuestionIndex];
-    const context = q.question_context.replace(/\n/g, "<br>");
+
+    const context = q.question_context.replace(/\\n/g, "<br>");
     showMessage(`<strong>Question ${q.id}:</strong><br>${context}`);
+
+    // ✅ This displays the image if one is provided
+    if (q.image) {
+      showMessage(`<img src="${q.image}" alt="Question image" style="max-width: 100%; margin-top: 10px;">`);
+    }
+
     hasSeenContext = true;
   }
 }
 
+
 function showPartPrompt() {
   const q = data[currentQuestionIndex];
   const part = q.parts[currentPartIndex];
-  showMessage(`<strong>Part ${part.part_id} (${part.points} pts):</strong><br>${part.question.replace(/\n/g, "<br>")}`);
+
+  // Optional mid-question context
+  if (part.part_context) {
+    showMessage(`<em>${part.part_context.replace(/\\n/g, "<br>")}</em>`);
+  }
+
+  const formattedQuestion = part.question.replace(/\\n/g, "<br>");
+  showMessage(`<strong>Part ${part.part_id} (${part.points} pts):</strong><br>${formattedQuestion}`);
 }
+
 
 function smartEquals(studentInput, correctAnswer) {
   const normalize = str => parseFloat(str.replace("%", "").trim());
@@ -111,15 +136,20 @@ function smartEquals(studentInput, correctAnswer) {
 }
 
 function showNextPart() {
+  const q = data[currentQuestionIndex];
+  const part = q.parts[currentPartIndex];
+
+  console.log("🧪 Showing Q:", q.id, "Part:", part.part_id);
+
   if (currentQuestionIndex >= data.length) {
     showMessage(`<strong>🎉 Quiz Complete! Final Score: ${score} points</strong>`);
     return;
   }
 
-  const q = data[currentQuestionIndex];
   if (currentPartIndex === 0) showContextOnce();
   showPartPrompt();
 }
+
 
 function submitAnswer() {
   const input = document.getElementById("answer").value.trim();
@@ -162,29 +192,54 @@ function showRetryButtons(part) {
     showMessage("🔁 Give it another go...");
     chatLog.removeChild(tryBtn);
     chatLog.removeChild(hintBtn);
+    if (answerBtn) chatLog.removeChild(answerBtn);
   };
 
   const hintBtn = document.createElement("button");
   hintBtn.textContent = "💡 Give Me a Hint";
   hintBtn.onclick = () => {
     showMessage(`💡 Hint: ${part.hint || "No hint available."}`);
+    // ✅ Show the "Show Answer" button after hint
     chatLog.removeChild(tryBtn);
     chatLog.removeChild(hintBtn);
+    chatLog.appendChild(answerBtn);
+  };
+
+  const answerBtn = document.createElement("button");
+  answerBtn.textContent = "🔎 Show Answer";
+  answerBtn.onclick = () => {
+    showMessage(`✅ Final Answer: <strong>${part.correct_answer}</strong><br>🧠 Explanation: ${part.explanation}`);
+    chatLog.removeChild(answerBtn);
+    retryMode = false;
+    nextStep();
   };
 
   chatLog.appendChild(tryBtn);
   chatLog.appendChild(hintBtn);
 }
-
 function nextStep() {
   currentPartIndex++;
+
   const q = data[currentQuestionIndex];
   if (currentPartIndex >= q.parts.length) {
     currentPartIndex = 0;
     currentQuestionIndex++;
     hasSeenContext = false;
   }
-  setTimeout(showNextPart, 1000);
+
+  setTimeout(showNextPart, 500); // Delay so it flows smoother
 }
+function resetToTopicSelection() {
+  currentQuestionIndex = 0;
+  currentPartIndex = 0;
+  score = 0;
+  hasSeenContext = false;
+  retryMode = false;
+  selectedTopic = "All";
+  selectedSource = "All";
+  clearChat();
+  showTopicSelection();
+}
+
 
 window.onload = loadQuestions;
