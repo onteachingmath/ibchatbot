@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "subject": "IB Math",
+    "topic": "Number",
+    "difficulty": "easy",
+    "source": "2021 Paper 1 TZ2 Question 1",
+    "question_context": "Fred approximates \\( \\pi \\) using the expression:\\n\\n\\[ 3 + \\frac{1}{6 + \\frac{13}{16}} \\]",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Use this expression to approximate \\( \\pi \\), correct to four decimal places.",
+        "correct_answer": "3.1468",
+        "hint": "Use a calculator or break the fraction down step by step.",
+        "explanation": "Fred\u2019s approximation is: \\( 3 + \\frac{1}{6 + \\frac{13}{16}} = 3 + \\frac{1}{6.8125} = 3 + 0.1468 = 3.1468 \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Calculate the percentage error when Fred\u2019s approximation is compared to the value of \\( \\pi \\) on your calculator. Give your answer correct to two decimal places.",
+        "correct_answer": "0.166%",
+        "hint": "Use the formula: \\( \\text{Percentage Error} = \\left| \\frac{\\text{approx} - \\pi}{\\pi} \\right| \\times 100 \\)",
+        "explanation": "Fred\u2019s value is 3.1468 and actual \\( \\pi \\approx 3.14159265 \\).\\n\\n\\[ \\frac{|3.1468 - 3.1416|}{3.1416} \\times 100 \\approx 0.166\\% \\]"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "IB Math",
+    "topic": "Statistics",
+    "difficulty": "easy",
+    "source": "2021 Paper 1 TZ2 Question 2",
+    "question_context": "Isidro used a thermometer to record the maximum daily temperature over 10 consecutive days.\\n\\nThe temperatures in degrees Celsius were:\\n\\n\\[ 14,\\ 15,\\ 14,\\ 11,\\ 10,\\ 9,\\ 14,\\ 15,\\ 16,\\ 13 \\]",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 1,
+        "question": "Find the mode.",
+        "correct_answer": "14",
+        "hint": "Look for the most frequently occurring number in the list.",
+        "explanation": "The number 14 appears **3 times**, more than any other value, so the mode is **14**."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Find the mean.",
+        "correct_answer": "13.1",
+        "hint": "Add all the values and divide by the number of values.",
+        "explanation": "The total is \\( 14+15+14+11+10+9+14+15+16+13 = 131 \\). Dividing by 10 gives the mean: \\( \\frac{131}{10} = 13.1 \\)."
+      },
+      {
+        "part_id": "c",
+        "points": 1,
+        "question": "Find the standard deviation.",
+        "correct_answer": "2.21",
+        "hint": "Use your calculator\u2019s 1-variable stats function.",
+        "explanation": "Using the 1-variable stats on a GDC, the sample standard deviation is approximately **2.2** (rounded to 1 decimal place)."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "IB Math",
+    "topic": "Geometry",
+    "difficulty": "medium",
+    "source": "2021 Paper 1 TZ2 Question 3",
+    "question_context": "A piece of candy is made in the shape of a solid hemisphere.\\n\\nThe radius of the hemisphere is \\( 6 \\text{ mm} \\).",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 4,
+        "question": "Calculate the total surface area of one piece of candy.",
+        "correct_answer": "339",
+        "hint": "The surface area of a **solid hemisphere** includes both the curved surface and the circular base: \\( 3\\pi r^2 \\).",
+        "explanation": "Use \\( r = 6 \\). Total surface area = \\( 3\\pi r^2 = 3\\pi (36) = 108\\pi \\approx 339 \\text{ mm}^2 \\)."
+
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Calculate the weight of chocolate required to coat one piece of candy.\\n1 gram of chocolate covers \\( 240 \\text{ mm}^2 \\).",
+        "correct_answer": "1.41",
+        "hint": "Divide the surface area by the coverage of chocolate per gram: \\( \\frac{\\text{area}}{240} \\).",
+        "explanation": "Using \\( 226.2 \\div 240 \\approx 0.9425 \\Rightarrow \\text{0.94 g of chocolate} \\)."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "IB Math",
+    "topic": "Functions",
+    "source": "2021 Paper 1 TZ2 Question 4",
+    "question_context": "The price of soda at Big Boberta’s slurpee store is $1.50 per liter. If a customer buys a minimum of 10 liters, a discount of $5 is applied.\\n\\nThis can be modelled by the following function \\( L(x) = 1.50x - 5 \\), where \\( x \\geq 10 \\), and \\( x \\) is the number of liters of soda purchased.",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Find the total cost of buying 40 liters of soda at Big Boberta’s slurpee store.",
+        "correct_answer": "55",
+        "hint": "Substitute \\( x = 40 \\) into the function \\( L(x) = 1.5x - 5 \\).",
+        "explanation": "\\( L(40) = 1.5 \\times 40 - 5 = 60 - 5 = 55 \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Find \\( L^{-1}(70) \\), the number of liters purchased if the total cost was $70.",
+        "correct_answer": "50",
+        "hint": "Set \\( L(x) = 70 \\) and solve for \\( x \\).",
+        "explanation": "\\( 70 = 1.5x - 5 \\Rightarrow 75 = 1.5x \\Rightarrow x = 50 \\)."
+      },
+      {
+        "part_id": "c",
+        "points": 3,
+        "question": "The price at Slippery Sam’s Gastro Pub is $1.30 per liter with a 10-liter minimum.\\nFind the minimum value of \\( k \\) such that Slippery Sam’s is cheaper than Big Boberta’s when \\( x > k \\).",
+        "correct_answer": "25",
+        "hint": "Set up the inequality: \\( 1.30x < 1.50x - 5 \\) and solve.",
+        "explanation": "Solve: \\( 1.30x < 1.50x - 5 \\Rightarrow -0.20x < -5 \\Rightarrow x > 25 \\). So, \\( k = 25 \\)."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "IB Math",
+    "topic": "Geometry",
+    "source": "2021 Paper 1 TZ2 Question 5",
+    "question_context": "The Voronoi diagram below shows three food carts selling carnitas, T1, T2, and T3.\\n\\nA fourth food cart, T4, is located in the shaded region. The dashed lines in the diagram below represent the edges in the Voronoi diagram.\\n\\nJoseLuis stands inside the shaded region.",
+    "image": "https://dl.dropboxusercontent.com/scl/fi/8f7gfa2oemdhe8x5py1a8/p1.2021.tz1.5.jpg",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 1,
+        "question": "Explain why JoseLuis will get the strongest smells from the food cart in T4.",
+        "correct_answer": "every point in the shaded region is closer to T4",
+        "hint": "What does a Voronoi region represent?",
+        "explanation": "Each region in a Voronoi diagram contains all points closest to a specific site. Since JoseLuis is in the shaded region belonging to T4, he is closest to that cart."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Food cart T2 has coordinates \\( (-9, 5) \\) and the edge connecting vertices A and B has equation \\( y = 3 \\).\\n\\nWrite down the coordinates of tower T4.",
+        "correct_answer": "(-9, 1)",
+        "hint": "Use the fact that the edge lies halfway between T2 and T4, and is horizontal at \\( y = 3 \\).",
+        "explanation": "The edge is a horizontal line, so T4 must have the same \\( x \\)-coordinate (\\( -9 \\)) and be mirrored across \\( y = 3 \\). Thus, T4 is at \\( (-9, 1) \\)."
+      },
+      {
+        "part_id": "c",
+        "points": 3,
+        "question": "Tower T1 has coordinates \\( (-13, 3) \\).\\nFind the gradient of the edge of the Voronoi diagram between towers T1 and T2.",
+        "correct_answer": "0.5",
+        "hint": "Use the formula for gradient between two points: \\( m = \\frac{y_2 - y_1}{x_2 - x_1} \\).",
+        "explanation": "T1 is at \\( (-13, 3) \\), T2 is at \\( (-9, 5) \\).\\n\\[ m = \\frac{5 - 3}{-9 - (-13)} = \\frac{2}{4} = 0.5 \\]"
+      }
+    ]
+  }
+  
+  
+]

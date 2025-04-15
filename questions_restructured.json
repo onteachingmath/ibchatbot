@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "subject": "IB Math",
+    "topic": "Number",
+    "difficulty": "easy",
+    "source": "2021 Paper 1 TZ2 Question 1",
+    "question_context": "Fred approximates \\( \\pi \\) using the expression:\\n\\n\\[ 3 + \\frac{1}{6 + \\frac{13}{16}} \\]",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 2,
+        "question": "Use this expression to approximate \\( \\pi \\), correct to four decimal places.",
+        "correct_answer": "3.1468",
+        "hint": "Use a calculator or break the fraction down step by step.",
+        "explanation": "Fred\u2019s approximation is: \\( 3 + \\frac{1}{6 + \\frac{13}{16}} = 3 + \\frac{1}{6.8125} = 3 + 0.1468 = 3.1468 \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Calculate the percentage error when Fred\u2019s approximation is compared to the value of \\( \\pi \\) on your calculator. Give your answer correct to two decimal places.",
+        "correct_answer": "0.166%",
+        "hint": "Use the formula: \\( \\text{Percentage Error} = \\left| \\frac{\\text{approx} - \\pi}{\\pi} \\right| \\times 100 \\)",
+        "explanation": "Fred\u2019s value is 3.1468 and actual \\( \\pi \\approx 3.14159265 \\).\\n\\n\\[ \\frac{|3.1468 - 3.1416|}{3.1416} \\times 100 \\approx 0.166\\% \\]"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "IB Math",
+    "topic": "Statistics",
+    "difficulty": "easy",
+    "source": "2021 Paper 1 TZ2 Question 2",
+    "question_context": "Isidro used a thermometer to record the maximum daily temperature over 10 consecutive days.\\n\\nThe temperatures in degrees Celsius were:\\n\\n\\[ 14,\\ 15,\\ 14,\\ 11,\\ 10,\\ 9,\\ 14,\\ 15,\\ 16,\\ 13 \\]",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 1,
+        "question": "Find the mode.",
+        "correct_answer": "14",
+        "hint": "Look for the most frequently occurring number in the list.",
+        "explanation": "The number 14 appears **3 times**, more than any other value, so the mode is **14**."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Find the mean.",
+        "correct_answer": "13.1",
+        "hint": "Add all the values and divide by the number of values.",
+        "explanation": "The total is \\( 14+15+14+11+10+9+14+15+16+13 = 131 \\). Dividing by 10 gives the mean: \\( \\frac{131}{10} = 13.1 \\)."
+      },
+      {
+        "part_id": "c",
+        "points": 1,
+        "question": "Find the standard deviation.",
+        "correct_answer": "2.2",
+        "hint": "Use your calculator\u2019s 1-variable stats function.",
+        "explanation": "Using the 1-variable stats on a GDC, the sample standard deviation is approximately **2.2** (rounded to 1 decimal place)."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "IB Math",
+    "topic": "Geometry",
+    "difficulty": "medium",
+    "source": "2021 Paper 1 TZ2 Question 3",
+    "question_context": "A piece of candy is made in the shape of a solid hemisphere.\\n\\nThe radius of the hemisphere is \\( 6 \\text{ mm} \\).",
+    "image": "",
+    "question_type": "short-answer",
+    "parts": [
+      {
+        "part_id": "a",
+        "points": 4,
+        "question": "Calculate the total surface area of one piece of candy.",
+        "correct_answer": "226.2",
+        "hint": "The surface area of a **solid hemisphere** includes both the curved surface and the circular base: \\( 3\\pi r^2 \\).",
+        "explanation": "Use \\( r = 6 \\). Total surface area = \\( 3\\pi r^2 = 3\\pi (36) = 108\\pi \\approx 226.2 \\text{ mm}^2 \\)."
+      },
+      {
+        "part_id": "b",
+        "points": 2,
+        "question": "Calculate the weight of chocolate required to coat one piece of candy.\\n1 gram of chocolate covers \\( 240 \\text{ mm}^2 \\).",
+        "correct_answer": "0.94",
+        "hint": "Divide the surface area by the coverage of chocolate per gram: \\( \\frac{\\text{area}}{240} \\).",
+        "explanation": "Using \\( 226.2 \\div 240 \\approx 0.9425 \\Rightarrow \\text{0.94 g of chocolate} \\)."
+      }
+    ]
+  }
+]
