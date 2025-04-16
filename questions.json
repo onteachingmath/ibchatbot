@@ -88,7 +88,7 @@
         "question": "Calculate the weight of chocolate required to coat one piece of candy.\\n1 gram of chocolate covers \\( 240 \\text{ mm}^2 \\).",
         "correct_answer": "1.41",
         "hint": "Divide the surface area by the coverage of chocolate per gram: \\( \\frac{\\text{area}}{240} \\).",
-        "explanation": "Using \\( 226.2 \\div 240 \\approx 0.9425 \\Rightarrow \\text{0.94 g of chocolate} \\)."
+        "explanation": "Using \\( 339 \\div 240 \\1.41 \\Rightarrow \\text{1.41 g of chocolate} \\)."
       }
     ]
   },
